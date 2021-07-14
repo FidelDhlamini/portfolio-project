@@ -1,11 +1,94 @@
 
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import Particles from "react-particles-js";
 import Navbar from './components/Navbar';
+import Header from './components/Header';
+import { BrowserRouter as Router,Route, Switch} from "react-router-dom";
+import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
+
+
+
+
+
+
 
 function App() {
   return (
+    <>
+    <Router>
+    
+    <Switch>
+ 
+    < Route path="/aboutme">
     <Navbar/>
+      <AboutMe/>
+      <Footer/>
+    </Route>
+
+    < Route path="/experience">
+    <Navbar/>
+     <Experience/>
+     <Footer/>
+    </Route>
+    
+    < Route path="/projects">
+    <Navbar/>
+      <Projects/>
+      <Footer/>
+    </Route>
+
+    < Route path="/contactme">
+    <Navbar/>
+      <ContactMe/>
+      <Footer/>
+    </Route>
+    <Route path="/" exact>
+    <Particles
+    className="particles-canvas"
+      params={{
+        particles:{
+          number:{
+            value: 50,
+            density:{
+              enable:true,
+              value_area: 900
+            }
+          },
+          shape:{
+            type:"circle",
+            stroke:{
+              width:6,
+              color: "#000000"
+            }
+          }
+        }
+      }}
+    />
+    <Navbar/>
+    <Header/>
+    <Footer/>
+     
+    </Route>
+    </Switch>
+  
+ 
+    
+    
+
+    </Router>
+    
+    
+    
+    
+    
+     
+    </>
   );
 }
 
