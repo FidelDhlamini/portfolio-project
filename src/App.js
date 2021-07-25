@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import { BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import AboutMe from './components/AboutMe';
+import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
@@ -27,7 +28,7 @@ function App() {
  
     < Route path="/aboutme">
     <Navbar/>
-      <AboutMe/>
+      <About/>
       <Footer/>
     </Route>
 
@@ -54,7 +55,7 @@ function App() {
       params={{
         particles:{
           number:{
-            value: 50,
+            value: 40,
             density:{
               enable:true,
               value_area: 900
@@ -64,7 +65,7 @@ function App() {
             type:"circle",
             stroke:{
               width:6,
-              color: "#000000"
+              color: "#fff"
             }
           }
         }

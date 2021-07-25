@@ -14,6 +14,19 @@
 }
 body{
   font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
+   margin: 0;
+   box-sizing: border-box
+  
+}
+html,body{
+  margin:0;
+    padding:0;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 /***************NavBar**************/
 nav{
@@ -86,6 +99,10 @@ nav a.nav-link{
   height: 90vh;
 
 }
+/* .aboutmewrap{
+  position: relative;
+  height: 90vh;
+} */
 .main-info{
   display: flex;
   position: absolute;
@@ -110,11 +127,13 @@ nav a.nav-link{
 
 }
 .aboutme {
-  position: relative;
+  /* position: relative;  */
   background: url(about-background.jpg)no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-position: center; 
+  
+ 
+  
 
 }
 .experience {
@@ -199,34 +218,52 @@ nav a.nav-link{
   z-index: 1;
 
 }
+/* .aboutme > .tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+
+} */
 /************footer********/
 .footer-icons{
   width:1.5rem;
   height:1.5rem;
 }
 /******About*********/
-.aboutme{
-  width: 100;
-  padding: 4.875rem 0rem;
-}
 
-.aboutme img{
-  height: 22.25rem;
-  width: 22.25rem;
+
+
+.photo img{
+  height: 15.25rem;
+  width: 15.25rem;
   border-radius: 50%;
   border-color:var(--primary-red);
   border-style: solid;
 }
-.about-text{
+.about-header{
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+.photo p{
+  color: var(--primary-white);
+  letter-spacing: 0.0625rem;
+  line-height: 1.75rem;
+  font-size: 0.9rem;
+  margin-bottom: 2.8125rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/* .about-text{
   width: 34.375rem;
 
 
-}
-.about-text h1{
+} */
+.aboutme h1{
   color: var(--primary-white);
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom:1.25rem ;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .about-text h5{
   color: var(--primary-white);
@@ -234,6 +271,7 @@ nav a.nav-link{
   text-transform: uppercase;
   margin-bottom:2.25rem ;
   letter-spacing: 0.125rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .about-text p {
   color: var(--primary-white);
@@ -241,11 +279,33 @@ nav a.nav-link{
   line-height: 1.75rem;
   font-size: 1.125rem;
   margin-bottom: 2.8125rem;
+  font-family: "Roboto Condensed", sans-serif;
+  
+}
+.photo h5{
+  color: var(--primary-white);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom:2.25rem ;
+  letter-spacing: 0.125rem;
+  font-family: "Roboto Condensed", sans-serif; 
+}
+.about-text{
+  padding-bottom: 6rem;
+}
+.photo{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 2rem;
+  
+  
 }
 .red{
   color: var(--primary-hover-red);
 }
-.mainabt{
+/* .mainabt{
   width: 70.625rem;
   max-width:95%;
   margin:0 auto ;
@@ -254,7 +314,7 @@ nav a.nav-link{
   justify-content: space-around;
   font-family: "Roboto Condensed", sans-serif;
 
-}
+} */
 button{
   background: var(--primary-red);
   color: var(--primary-white);
@@ -264,16 +324,43 @@ button{
   padding: 0.8125rem 1.875rem;
   border-radius: 1.875rem;
   transition: .4s;
+  font-family: "Roboto Condensed", sans-serif;
 }
 button:hover{
   background: transparent;
   cursor: pointer;
   border: 0.125rem solid var(--primary-red);
+  font-family: "Roboto Condensed", sans-serif;
 
 }
-
-/* @media(max-width:768px){
-  .particles-canvas {
-    display: none;
+.carousel-item{
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+}
+.carousel-inner > .item > img { width:640px; height:360px; }
+@media (max-width: 600px){
+  .aboutme{
+    padding-bottom: 6rem;
+    padding-top: 2rem;
   }
-} */
+  .photo img{
+    height: 10.25rem;
+    width: 10.25rem;
+    border-radius: 100%;
+    border-color:var(--primary-red);
+    border-style: solid;
+    
+  }
+  .about-header{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+
+
+
+
+  
+  
