@@ -4,6 +4,7 @@ import Typed from "react-typed";
 
 const Header = () => {
     return (
+
     <div className="header-wrapper">
         <div className="main-info">
             <h1>welcome to fidel's world</h1>
@@ -11,7 +12,7 @@ const Header = () => {
             typeSpeed={30}
             backSpeed={50}
             loop
-            />
+            /> 
             {/* <a href="#" className="btn-main-offer">contact me</a> */}
                   
         </div>

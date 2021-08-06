@@ -6,12 +6,11 @@ import Particles from "react-particles-js";
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import { BrowserRouter as Router,Route, Switch} from "react-router-dom";
-import AboutMe from './components/AboutMe';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
+import ContactComponent from './components/ContactComponent';
 
 
 
@@ -46,7 +45,7 @@ function App() {
 
     < Route path="/contactme">
     <Navbar/>
-      <ContactMe/>
+      <ContactComponent/>
       <Footer/>
     </Route>
     <Route path="/" exact>

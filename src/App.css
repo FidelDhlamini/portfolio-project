@@ -204,6 +204,7 @@ nav a.nav-link{
   margin: 2rem;
   
 }
+
 .btn-main-offer:hover{
   text-decoration:none;
   background-color: var(--primary-hover-red);
@@ -338,6 +339,50 @@ button:hover{
   width: 20rem;
   position: relative;
 }
+
+/*     */
+
+.container-fluid form{
+  width: 100%;
+  padding: 0.625 rem;
+
+}
+.container-fluid label{
+  display: block;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+.container-fluid input,
+.container-fluid textarea{
+  width: 100%;
+  border: none;
+  box-shadow: 0.063rem 0.063rem 0.25rem 0.063rem var(--primary-white);
+
+
+}
+.container-fluid input:focus,
+.container-fluid textarea:focus{
+  box-shadow: 0.063rem 0.063rem 0.25rem 00.063rem var(--primary-red);
+
+}
+.singleItem{
+  margin: 0.625rem 0;
+}
+.msg{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0.625rem;
+  letter-spacing: 0.2rem;
+  font-style: "Roboto Condensed", sans-serif;
+  display: none;
+}
+*{margin: 0;
+  padding: 0;
+
+}
+
+
 .carousel-inner > .item > img { width:640px; height:360px; }
 @media (max-width: 600px){
   .aboutme{
@@ -355,6 +400,22 @@ button:hover{
   .about-header{
     padding-bottom: 1rem;
     padding-top: 1rem;
+  }
+  *{margin: 0;
+    padding: 0;
+  
+  }
+  
+  /* .container-fluid input:focus{
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #ef4035;
+  } */
+  .msgAppear{
+    display: block;
+  }
+  
+  *{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
 
