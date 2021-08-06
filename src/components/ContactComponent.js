@@ -14,7 +14,7 @@ function ContactComponent(props) {
     const sendEmail = (e) => {
         e.preventDefault();
       
-        emailjs.sendForm("gmail", "template_v4ijni7", e.target, "user_LykztWEtKz2khkkVUojm2")
+        emailjs.sendForm("service_11wik8l", "template_v4ijni7", e.target, "user_LykztWEtKz2khkkVUojm2")
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -36,12 +36,13 @@ function ContactComponent(props) {
         <div>
            <div className="container-fluid contactme">
 
-<form action="" onSubmit={sendEmail}  >
+<form onSubmit={sendEmail}  >
 
 <div className="singleItem">
   <label>Full Name</label>
   <input type="text" 
   name="fullName" 
+  className="form-control"
   placeholder="Enter Your Full Name"
   required>
   </input>
@@ -50,7 +51,7 @@ function ContactComponent(props) {
   <div className="singleItem">
   <label> E-mail</label>
   <input type="text" 
-  className="email"  
+  className="form-control"  
   name="email"
   placeholder="Enter Your E-mail"
   required></input>
@@ -59,7 +60,7 @@ function ContactComponent(props) {
   <div className="singleItem">
   <label> Phone Number</label>
   <input type="text" 
-  className="phone"
+  className="form-control"
   name="phone"
   placeholder="+27 (72) 456-7890"></input>
   </div>
