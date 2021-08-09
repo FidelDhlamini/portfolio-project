@@ -1,11 +1,11 @@
 import React from 'react'
 import img1 from "./fidel.jpeg";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 const About = () => {
     return (
         <div className="aboutme text-center">
-            <Particles
+            {/* <Particles
     className="particles-canvas"
       params={{
         particles:{
@@ -25,7 +25,7 @@ const About = () => {
           }
         }
       }}
-    />
+    /> */}
      
         <div className = "container-fluid">
        
@@ -52,7 +52,9 @@ const About = () => {
          
           <h5>Web Development <span className= "red">and Design</span> </h5>
           <p>I am a full stack web developer and UI/UX designer with two and a half years of experience working with HTML,CSS,Bootstrap,Semantic UI,NodeJS,Spark Java,API development, MySQL and ReactJS to create responsive and user-friendly websites.I use agile practices like Test Driven Development (Mocha and Chai,JUnit4),Kanban and Scrum.Problem solving has always been a passion and I'm open to learning new things and sharing knowledge with others.</p>
-          <button href="/contactme" type="button">contact me</button>
+          <a href="/contactme">
+          <button  type="button">contact me</button>
+          </a>
          </div>
                 </div>
 

@@ -31,11 +31,11 @@ function App() {
       <Footer/>
     </Route>
 
-    < Route path="/experience">
+    {/* < Route path="/experience">
     <Navbar/>
      <Experience/>
      <Footer/>
-    </Route>
+    </Route> */}
     
     < Route path="/projects">
     <Navbar/>
@@ -86,7 +86,7 @@ function App() {
     
     
     
-    
+  
      
     </>
   );

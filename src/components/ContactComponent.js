@@ -33,7 +33,7 @@ function ContactComponent(props) {
 
 
     return(
-        <div>
+        
            <div className="container-fluid contactme">
 
 <form onSubmit={sendEmail}  >
@@ -67,7 +67,7 @@ function ContactComponent(props) {
 
   <div className="textarea singleItem">
   <label htmlFor="message"> Message/Comments</label>
-  <textarea name="message" rows="5"
+  <textarea name="message" rows="5" required
   placeholder="Your Message..."
 ></textarea>
   </div>
@@ -89,7 +89,7 @@ function ContactComponent(props) {
 
 </form>
 </div>  
-        </div>
+        
     );
 }
 export default ContactComponent;

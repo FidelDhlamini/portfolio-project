@@ -19,14 +19,15 @@ body{
    box-sizing: border-box
   
 }
-html,body{
+/* html,body{
   margin:0;
     padding:0;
-}
+} */
 .container-fluid {
   width: 100%;
   margin: 0px;
   padding: 0px;
+ 
 }
 /***************NavBar**************/
 nav{
@@ -119,11 +120,14 @@ nav a.nav-link{
 }
 /********Projects**********/
 .projects{
-  position: relative;
-  background: url(about-background.jpg)no-repeat;
+  /* position: relative; */
+  background: url(greybackground.jpeg)no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
+  padding-top: 0rem;
+  justify-content: center;
+  align-items: center;
 
 }
 .aboutme {
@@ -150,6 +154,8 @@ nav a.nav-link{
   background-size: cover;
   background-position: center;
   height:100vh;
+  color: var(--primary-white);
+  padding-top: 2rem;
 
 }
 .main-info-projects{
@@ -169,15 +175,8 @@ nav a.nav-link{
   
 
 }
-.main-info-projects h1{
-  color:var(--primary-red);
-  text-transform: uppercase;
 
-}
-.typed-text-projects{
-  font-size: 2rem;
-  color:var(--primary-white);
-}
+
 
 
 
@@ -319,7 +318,7 @@ nav a.nav-link{
 button{
   background: var(--primary-red);
   color: var(--primary-white);
-  text-decoration: none;
+  text-decoration: none !important;
   border: 0.125rem solid transparent;
   font-weight: bold;
   padding: 0.8125rem 1.875rem;
@@ -381,6 +380,27 @@ button:hover{
   padding: 0;
 
 }
+.cards{
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.cards-first{
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+}
+.cards-second{
+  padding-left: 4rem;
+}
+.card-container{
+  font-family: "Roboto Condensed", sans-serif;
+  
+}
 
 
 .carousel-inner > .item > img { width:640px; height:360px; }
@@ -396,6 +416,16 @@ button:hover{
     border-color:var(--primary-red);
     border-style: solid;
     
+  }
+  .cards-first{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 0rem;
+  }
+  .cards-second{
+    padding-left: 0rem;
   }
   .about-header{
     padding-bottom: 1rem;

@@ -53,7 +53,7 @@ const Navbar = () => {
                   </NavLink>
                 </Switch>
 
-                <Switch>
+                {/* <Switch>
                   <NavLink
                     exact
                     className="main-nav"
@@ -62,7 +62,7 @@ const Navbar = () => {
                   >
                     Experience
                   </NavLink>
-                </Switch>
+                </Switch> */}
 
                 <Switch>
                   <NavLink

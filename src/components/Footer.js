@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaInstagramSquare,
+  FaGithub,
 } from "react-icons/fa";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -27,38 +28,39 @@ function Footer() {
             </div>
             {/* Column-2 */}
             <div className="col-md-3 col-sm-6">
-              <h4>some text</h4>
+              <h4></h4>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/https://github.com/FidelDhlamini/portfolio-project">
+                    <FaGithub className="footer-icons"></FaGithub></a>
                 </li>
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/"></a>
                 </li>
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/"></a>
                 </li>
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/"></a>
                 </li>
               </ul>
             </div>
             
             {/* Column-3*/}
             <div className="col-md-3 col-sm-6">
-              <h4>some text</h4>
+              <h4>Jump to page</h4>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/contactme">Contact Me</a>
                 </li>
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/aboutme">About Me</a>
                 </li>
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/"></a>
                 </li>
                 <li>
-                  <a href="/">some text</a>
+                  <a href="/projects">Projects</a>
                 </li>
               </ul>
             </div>
@@ -66,26 +68,24 @@ function Footer() {
             <div className="col-md-3 col-sm-6">
               <h4>social</h4>
               <ul className="list-unstyled">
-                <li>
+                {/* <li>
                   <a href="/">
                     <FaFacebookSquare className="footer-icons"></FaFacebookSquare>{" "}
-                    Facebook
+                  </a>
+                </li> */}
+                <li>
+                  <a href="/">
+                    <FaLinkedin className="footer-icons"></FaLinkedin>
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <FaLinkedin className="footer-icons"></FaLinkedin> Linkedin
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <FaTwitter className="footer-icons"></FaTwitter>Twitter
+                    <FaTwitter className="footer-icons"></FaTwitter>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/formic_iconic_/">
                     <FaInstagramSquare className="footer-icons"></FaInstagramSquare>
-                    Instagram
                   </a>
                 </li>
               </ul>
